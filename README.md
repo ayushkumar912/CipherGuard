@@ -14,27 +14,48 @@ This project implements a Data Encryption Standard (DES) encryption and decrypti
 - OpenSSL library
 - Makefile utility
 
+
+# CipherGuard
+
+CipherGuard is a secure file encryption and decryption application that utilizes the DES (Data Encryption Standard) algorithm. This project is designed to provide an easy way to encrypt and decrypt files using a user-defined key.
+
+## Features
+
+- Generate a 4KB file filled with random alphanumeric characters.
+- Calculate and display the SHA1 hash of the original and decrypted files to verify integrity.
+- Support for encryption and decryption using DES in CBC (Cipher Block Chaining) mode.
+- User-friendly command-line interface for key input.
+
+## Installation
+
+  
 ## Installation
 1. Clone the repository or download the project files.
+   ```bash
+   git clone https://github.com/ayushkumar912/CipherGuard.git
+   ```
 2. Ensure you have OpenSSL installed on your system.
+    ```bash
+   brew install openssl
+   ```
 3. Navigate to the project directory.
 
-```bash
-cd path/to/des_project
-```
+   ```bash
+   cd path/to/des_project
+   ```
 
 4. Build the project using Makefile.
 
-```bash
-make
-```
+   ```bash
+   make
+   ```
 
 ## Usage
 1. Run the application:
 
-```bash
-./main
-```
+   ```bash
+   ./main
+   ```
 
 2. The program will:
    - Create a directory named `data`.
@@ -47,9 +68,9 @@ make
 ## Clean Up
 To clean up generated files and executables, run:
 
-```bash
-make clean
-```
+  ```bash
+   make clean
+  ```
 
 ## License
 This project is licensed under the Apache License - see the [LICENSE](LICENSE) file for details.
